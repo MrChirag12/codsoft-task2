@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ainertia - Landing Page</title>
+  <link rel="stylesheet" href="landing.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="Ainertia Logo" class="logo-img">
+        <h1>Ainertia</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Welcome to Ainertia</h2>
+    <p>Your trusted partner for cutting-edge web development solutions powered by the latest technologies.</p>
+    <a href="#contact" class="cta-button">Get in Touch</a>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>At Ainertia, we specialize in creating tailored digital experiences for businesses and individuals. We harness the power of the latest technologies, such as MERN, Next.js, and Generative AI, to build websites and applications that are not only functional but also future-proof.</p>
+    <p>Our goal is to provide innovative and scalable solutions that help businesses grow and stay ahead in a competitive digital landscape.</p>
+    <div class="about-images">
+      <div class="about-image">
+        <img src="webdevelopment.png" alt="Web Development">
+        <p>Web Development</p>
+      </div>
+      <div class="about-image">
+        <img src="appdevelopment.png" alt="App Development">
+        <p>App Development</p>
+      </div>
+      <div class="about-image">
+        <img src="genai.png" alt="AI Integration">
+        <p>AI Integration</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="service-card">
+        <h3>Web Development</h3>
+        <p>We build dynamic, user-friendly websites using the MERN stack (MongoDB, Express.js, React, Node.js), ensuring fast and scalable performance.</p>
+      </div>
+      <div class="service-card">
+        <h3>Mobile App Development</h3>
+        <p>Our mobile app development services focus on creating intuitive apps with seamless user experiences, using React Native for cross-platform development.</p>
+      </div>
+      <div class="service-card">
+        <h3>Next.js Web Applications</h3>
+        <p>Next.js enables us to build high-performance static and dynamic websites with SEO optimization out-of-the-box, ensuring fast, SEO-friendly applications.</p>
+      </div>
+      <div class="service-card">
+        <h3>Generative AI Integration</h3>
+        <p>We integrate advanced Generative AI technologies into websites and apps to enhance user engagement with personalized content and AI-powered systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Ready to take your digital presence to the next level? Reach out to us, and let's discuss how we can help bring your vision to life.</p>
+    <form action="#">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Ainertia. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.nav-links a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
+
